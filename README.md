@@ -1,16 +1,16 @@
-##基于springcloud、zkipin、kafka、elasticsearch实现的微服务调用链路跟踪demo
+## 基于springcloud、zkipin、kafka、elasticsearch实现的微服务调用链路跟踪demo  
 
 
-###一、安装zookeeper
+### 一、安装zookeeper  
     http://zookeeper.apache.org/doc/current/zookeeperStarted.html
 
-###二、安装kafka
+### 二、安装kafka  
     http://kafka.apache.org/quickstart
     
-###三、安装elasticsearch
-    
+### 三、安装elasticsearch  
+https://www.elastic.co/guide/en/elasticsearch/reference/6.2/install-elasticsearch.html  
 
-###四、启动应用
+### 四、启动应用  
     1、启动zkipin-server服务
        ServerZipkinApplication
        
