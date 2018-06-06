@@ -3,6 +3,7 @@ package com.runssnail.demo.provider;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.logging.Level;
@@ -22,9 +23,9 @@ public class ServiceProviderApplication {
     }
 
     @RequestMapping("/hi")
-    public String callHi() {
+    public String callHi(@RequestParam String name) {
         LOG.log(Level.INFO, "calling trace service-provider");
-        return "hi";
+        return "hi" + name;
     }
 
 //    @Bean
